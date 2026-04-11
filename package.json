@@ -5,14 +5,22 @@
   "main": "index.js",
   "scripts": {
     "cy:open": "cypress open",
-    "cy:run": "cypress run"
+    "cy:run": "cypress run",
+    "cy:run:headed": "cypress run --headed",
+    "cy:run:spec": "cypress run --spec",
+    "lint": "eslint cypress/**/*.ts",
+    "lint:fix": "eslint cypress/**/*.ts --fix"
   },
   "author": "Daniele Araújo",
   "license": "MIT",
   "devDependencies": {
-    "cypress": "^13.12.0",
-    "cypress-plugin-api": "^2.11.1",
-    "eslint-plugin-cypress": "^2.13.3",
-    "typescript": "^5.5.2"
+    "@faker-js/faker": "^10.4.0",
+    "@typescript-eslint/eslint-plugin": "^8.58.1",
+    "@typescript-eslint/parser": "^8.58.1",
+    "cypress": "^13.17.0",
+    "cypress-plugin-api": "^2.11.2",
+    "eslint": "^9.5.0",
+    "eslint-plugin-cypress": "^6.0.0",
+    "typescript": "^5.9.3"
   }
 }
